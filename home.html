@@ -21,10 +21,11 @@
 </head>
 
 <body>
-    <header class="flex items-center justify-between lg:px-20 md:px-14 sm:px-10 px-4 py-4">
+    <header class="bg-gray-100 flex items-center justify-between lg:px-20 md:px-14 sm:px-10 px-4 py-4">
         <div class="flex items-center gap-1">
             <img src="./assets/github-logo.png" alt="github" class="max-w-8">
-            <h1 class="font-semibold lg:text-2xl md:text-[20px] lg:block md:block sm:hidden hidden ">GitHub Issues Tracker</h1>
+            <h1 class="font-semibold lg:text-2xl md:text-[20px] lg:block md:block sm:hidden hidden ">GitHub Issues
+                Tracker</h1>
         </div>
 
         <div class="flex items-center lg:gap-4 md:gap-2 sm:gap-1 gap-1 ml-10">
@@ -42,6 +43,66 @@
             <button class="btn btn-info bg-[#4A00FF] text-white">+ New Issue</button>
         </div>
     </header>
+
+
+    <section>
+        <div class="max-w-[1110px] mx-auto bg-gray-100 p-6 mt-[60px] rounded-lg">
+            <button class="btn btn-outline btn-info">All</button>
+            <button class="btn btn-outline btn-info">Open</button>
+            <button class="btn btn-outline btn-info">Closed</button>
+        </div>
+    </section>
+
+    <section>
+        <div class="max-w-[1110px] mx-auto bg-gray-100 p-4 mt-4 rounded-t-lg flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center"><img
+                        src="./assets/Aperture.png" alt="Aperture"></div>
+                <div>
+                    <p class="text-[20px] font-semibold"><Span>50</Span> Issues</p>
+                    <p class="text-[16px] text-[#64748B]">Track and manage your project issues</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <p class="flex items-center gap-2"><img src="./assets/Ellipse 2.png" alt=""> Open</p>
+                <p class="flex items-center gap-2"><img src="./assets/Ellipse 2 (1).png" alt=""> Closed</p>
+            </div>
+        </div>
+
+        <hr class="max-w-[1110px] mx-auto text-gray-300 rounded-lg">
+
+        <section class="max-w-[1110px] mx-auto bg-gray-200 p-6 rounded-b-lg grid  grid-cols-4 gap-3">
+
+            <div class="card w-[256px] bg-base-100 shadow-sm border-t-4 border-green-600">
+                <div class="p-4 space-y-2">
+                    <div class="flex items-center justify-between">
+                        <img src="./assets/Open-Status.png" alt="Open">
+                        <p class="py-1 px-[25px] text-[12px] font-medium bg-[#FEECEC] text-[#EF4444] rounded-full">HIGH
+                        </p>
+                    </div>
+                    <h2 class="text-[14px] font-semibold">Fix navigation menu on mobile devices</h2>
+                    <p class="text-[12px] text-[#64748B]">The navigation menu doesn't collapse properly on mobile
+                        devices...</p>
+                    <div class="flex items-center justify-between">
+                        <p
+                            class="flex items-center gap-1 py-[6px] px-2 text-[12px] font-medium border-1 border-[#FECACA] bg-[#FEECEC] text-[#EF4444] rounded-full">
+                            <img src="./assets/BugDroid.png" alt=""> BUG
+                        </p>
+                        <p
+                            class="flex items-center gap-1 py-[6px] px-2 text-[12px] font-medium border-1 border-[#FDE68A] bg-[#FFF8DB] text-[#D97706] rounded-full">
+                            <img src="./assets/Lifebuoy.png" alt=""> HELP WANTED
+                        </p>
+                    </div>
+                </div>
+
+                <div class="py-3 space-y-1 border-t-2 border-gray-300 p-4">
+                    <p class="text-[12px] text-[#64748B]">#1 by john_doe</p>
+                    <p class="text-[12px] text-[#64748B]">1/15/2024</p>
+                </div>
+            </div>
+
+        </section>
+    </section>
 </body>
 
 </html>
