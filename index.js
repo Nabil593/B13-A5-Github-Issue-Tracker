@@ -8,7 +8,7 @@ signBtn.addEventListener('click', () => {
 
     if (userNameValue === 'admin' && userPasswordValue === 'admin123') {
         alert('Sign In Success!');
-        window.location.assign('/home.html');
+        window.location.assign('./home.html');
     } else {
         alert('Sign In Failed');
         return;
