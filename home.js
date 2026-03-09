@@ -4,7 +4,6 @@ function loadData() {
   cardContainer.innerHTML = `
     <div class="col-span-full flex flex-col items-center justify-center py-20 gap-4">
         <span class="loading loading-spinner loading-lg text-secondary"></span>
-        <p class="text-secondary font-medium animate-pulse">Loading Issues...</p>
     </div>
 `;
 
@@ -16,7 +15,7 @@ function loadData() {
     });
 }
 
-
+// Display Data function
 function displayData(dataList) {
   const cardContainer = document.getElementById("card-container");
   cardContainer.innerHTML = "";
@@ -105,7 +104,7 @@ function displayData(dataList) {
   document.getElementById("count").innerText = dataList.length;
 }
 
-
+// all buttons filters
 const buttons = document.querySelectorAll("section button");
 for (let btn of buttons) {
   btn.addEventListener("click", function () {
@@ -185,8 +184,8 @@ function showDetails(id) {
           return `
         <p class="flex items-center gap-1 py-[6px] px-2 text-[10px] font-medium border ${style.border} ${style.bg} ${style.text} rounded-full">
             ${style.icon} ${label.toUpperCase()}
-        </p>
-    `;
+        </p>`;
+        
         })
         .join("");
 
