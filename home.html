@@ -38,17 +38,16 @@
                         <path d="m21 21-4.3-4.3"></path>
                     </g>
                 </svg>
-                <input type="search" required placeholder="Search issues.." />
+                <input id="search-input" type="search" required placeholder="Search issues.." />
             </label>
-
-            <button class="btn bg-[#4A00FF] text-white">+ New Issue</button>
+            <button id="search" class="btn bg-[#4A00FF] text-white">+ New Issue</button>
         </div>
     </header>
 
     <!-- buttons design -->
     <section>
         <div class="max-w-[1110px] mx-auto bg-white p-6 mt-[60px] rounded-lg shadow-sm space-x-2">
-            <button class="border-1 border-gray-200 rounded-[4px] cursor-pointer btn lg:px-10 md:px-8 sm:px-4 px-4 py-2">All</button>
+            <button id="all-btn" class="border-1 bg-[#4A00FF] text-white rounded-[4px] cursor-pointer btn lg:px-10 md:px-8 sm:px-4 px-4 py-2">All</button>
             <button class="border-1 border-gray-200 rounded-[4px] cursor-pointer btn lg:px-10 md:px-8 sm:px-4 px-4 py-2">Open</button>
             <button class="border-1 border-gray-200 rounded-[4px] cursor-pointer btn lg:px-10 md:px-8 sm:px-4 px-4 py-2">Closed</button>
         </div>
@@ -61,7 +60,7 @@
                 <div class="w-12 h-12 rounded-full bg-[#ECE4FF] flex items-center justify-center"><img
                         src="./assets/Aperture.png" alt="Aperture"></div>
                 <div>
-                    <p class="text-[20px] font-semibold"><Span>50</Span> Issues</p>
+                    <p class="text-[20px] font-semibold"><Span id="count">50</Span> Issues</p>
                     <p class="text-[16px] text-[#64748B]">Track and manage your project issues</p>
                 </div>
             </div>
@@ -73,38 +72,15 @@
 
         <hr class="max-w-[1110px] mx-auto text-gray-300 rounded-lg">
 
-        <section class="max-w-[1110px] mx-auto bg-[#FBFBFB] p-6 rounded-b-lg grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-3 shadow-lg">
-
-            <div class="card w-full mx-auto bg-base-100 shadow-sm border-t-4 border-green-600">
-                <div class="p-4 space-y-2">
-                    <div class="flex items-center justify-between">
-                        <img src="./assets/Open-Status.png" alt="Open">
-                        <p class="py-1 px-[25px] text-[12px] font-medium bg-[#FEECEC] text-[#EF4444] rounded-full">HIGH
-                        </p>
-                    </div>
-                    <h2 class="text-[14px] font-semibold">Fix navigation menu on mobile devices</h2>
-                    <p class="text-[12px] text-[#64748B]">The navigation menu doesn't collapse properly on mobile
-                        devices...</p>
-                    <div class="flex items-center justify-between">
-                        <p
-                            class="flex items-center gap-1 py-[6px] px-2 text-[12px] font-medium border-1 border-[#FECACA] bg-[#FEECEC] text-[#EF4444] rounded-full">
-                            <img src="./assets/BugDroid.png" alt=""> BUG
-                        </p>
-                        <p
-                            class="flex items-center gap-1 py-[6px] px-2 text-[12px] font-medium border-1 border-[#FDE68A] bg-[#FFF8DB] text-[#D97706] rounded-full">
-                            <img src="./assets/Lifebuoy.png" alt=""> HELP WANTED
-                        </p>
-                    </div>
-                </div>
-
-                <div class="py-3 space-y-1 border-t-2 border-gray-300 p-4">
-                    <p class="text-[12px] text-[#64748B]">#1 by john_doe</p>
-                    <p class="text-[12px] text-[#64748B]">1/15/2024</p>
-                </div>
-            </div>
+        <section id="card-container" class="max-w-[1110px] mx-auto bg-[#FBFBFB] p-6 rounded-b-lg grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-3 shadow-lg">
 
         </section>
     </section>
+
+    
+
+    <script src="./home.js"></script>
+    <dialog id="my_modal_1" class="modal"></dialog>
 </body>
 
 </html>
